@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Gear Pagamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!--logo-->
+            <a href="#" class="logo">SPACE GEAR</a>
+            <!-- Cart icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Seu Carrinho</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">R$0</div>
+                </div>
+                <!-- Botão De Comprar -->
+                <button type="button" class="btnbuy">Pague Agora</button>
+                <!-- Fechar -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Produtos -->
+    <section class="shop container">
+        <h2 class="section-title">Comprar produtos</h2>
+        <!-- Loja Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQSbNE8Ea13rLlzNLtdZlG3bog936zcU2wWy2gDkInI1nCSXPVCaMm0_ZqJNkjbuDvoBF4a_pz2oNFPJgbfcckDjw9P9fYAi5Ajq9RrB24iBYROsHe26PnSeuFPnLj2EL8lYQOOtgDyDv5dTHBzqMgX5v7MrbnomixOh-YYWYp0j4EzBDSr-NnDa9JdxM/s320/download%20(8).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">RTX 5000</h2>
+                 <span class="price">R$16599,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguqxQJKqOW5-0RY0IPsqH66Jy26SBDDDR-OCoZc-d6gyV2siw62KnX49RIJDQL9Pe-cfFMEFAGszswGL6i3GEMEeu_22CfnfUqqcbfeBSxhx3d350vlIp7u3eNO5hR3c3GBa7jFY4y6ZotNbTac4n8V2YZrO7tYRz0f3X3KBLP9VHe1nkd2nx7Mpj9Ckc/s320/Zeus.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">REDRAGON ZEUS X</h2>
+                 <span class="price">R$259,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx4r_qCB1fgwIo1cDrWnZFz7jQmo7Id-SxqW3jhcgdRD-OdqbUmKhA0yonfH0dlEqRjSbxoAhgSXpLoRGr86XVBMJuoJL8mFpA0GOpJIMwujUR0l_OJPAA0HlfTIrWjo1n0ooa4huD4QoAqqLeSZuhwzWREypaiL9qIi2h0g_DurzSujW7FlM7_zOf58Q/s320/I9.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">INTEL CORE I9-12th</h2>
+                 <span class="price">R$3100,00</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHghs5RtoJa3fhNQpYYH54NDm6VIvuP7HkaPXE2zZTZgj3SujJ3NrcWBSjcQKR4bruW2jujiQEwdekfhEqdcmX4BZSdzojQbiUR-8RXr9OTejfCgcBW3JGyTRWyZzQRlGmjZy8I8S7aAwOzGXreR3mthqPPvXfT_FhLbbDOWsNTU-I6PYE7-TX-l1m-kc/s320/download%20(9).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">REDRAGON KUMARA RGB</h2>
+                 <span class="price">R$258,50</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSBAnsyfXsxPIqlEkfnd5sofCNroMDhFDteMB9TeKHvzsNXbg-4YL-Y5VvqVECh8eVB0WbOvvTb1Rgz0tYKh8K-TeP1EFMyGhSSxpSTXifmRZg-1LzJ_WFZAIE66Om27J1Ai0r_AHMn1_1sf7k77nrLnMoMzAnlha3PmDlHMSI6z_PFC0x15WRTTEXQbw/s320/Fallen.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">MOUSEPAD GAMER FALLEN MEDUSA</h2>
+                 <span class="price">R$169,00</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 6 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGL9LCReDx6CjAckZfyHDoTU69-84CejKyg9MAj6YeWRDT-NLcbv7EeI0AVHZXg86iUb3l3aGpkvM8jm3FCwN_pcElWQz69BzqMWbVrAO8FhrEKmLCXcw3ZrisSWI8uFjl8F3iQhGf1V5V3HgyqnDNC2xxdvs5_y0L2FsevlyHY1csFcYkcpo07cnAYqQ/s320/rx.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">RX 6700XT</h2>
+                 <span class="price">R$2099,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 7 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj62JkBQkEzjkrn4Ws2YiAOtRChdoXnylj0GdWN-M38ZdqKfr38YixS-ZfvIUl8r4ah3Uv9deMhKbYdgHdY25iLFL4m0V_NlyUz8noUZzMAhfRULA5DrPt4DEhQkcgdD19lvN6SdWS0GKXgiQ2T443zYQaHuxA2lv6hg7dcyzTlfew9ND8r6Bj-zkf_0lQ/s320/Ryzen%207.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">RYZEN 7 5800X</h2>
+                 <span class="price">R$3437,91</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 8 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxagoFyexWsmpkCyutUmZ7Xu8PM_VSq62vaKmi8tJjtmQwdPee_KvI0iQPZlm9cElmEJRoYauHEQ0Yjpl2AkKaUMRsTieDiWDM1SdX9u7ujjdDrWEKFXG4id5ASZYZ218m2AU7IfjT4Crjms9jUtGdZAokZvjwz-QI_ime4kxBUynJ_fkbYGtDCyezC84/s320/download.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">TECLADO MECÂNICO GAMER HUSKY GAMING BLIZZARD</h2>
+                 <span class="price">R$529,29</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 9 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxTS_aFtxRjlJyVPOL6IcH01aFdSGEUAzleJJv1LJqu1Q2IayPciduw6NXLa3CEJNjH1_DicLYprbfpo-F8RopCBmngggPcOzHpBMWLb27DGjBuMaNAuA_wgRderKrtPJlmhUl14LVlJ_xQcwEf8oNtZ7K7WxY5ZoJdQOVHyz0zK0ZhOZs_VbZ5txUbeI/s320/download%20(1).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">SSD XPG GAMMIX S11 PRO 2TB</h2>
+                 <span class="price">R$678,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 10 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQGOWDFQDA2h4HrcEIi9kzj74wc_1k7BLJ3phgBxBJ9ow6N9syUWzvLHFF41GDxiv5rYqY9nWC7346EQZ7U0W9o1qZE9FzjR8024EZfXrx2xLDW3W1-CQ8do4hznvhzQXfVwggWZoEFS4qfjweCv8L_b4y8saDxU2y_Qsd7f2qIuPPgByFmfQWsdvIo-U/s320/download%20(2).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">PLACA DE VIDEO GTX 1650 4GB</h2>
+                 <span class="price">R$849,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 11 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7m7FSTsXVhCOxCBupr8PzdDiy47AkGGldwSDbW9W2rNop15-13RVUoo-3eySXivIeoepPpBD3llnRF7dccphjmoE70cAkFVpuJ2JYfN8x8_Ba2shw2Vh1ypFA8uGV06URfbzqxVEEO-c_9OwcCgavzyCQA8Cd1W860cGnW01s_KJtso0gnLkOFAMZ3Jc/s320/download%20(3).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">MOUSEPAD GAMER HAVIT RGB</h2>
+                 <span class="price">R$70,00</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 12 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFPG7uaiwGNRUALCMkzqlcgHE6i_puxQIr2JtHUmKFw0MBy2WPGUtYPq2XH8aFr1xWrLdPgkVSbvoez51aTICbh91-5NlZTOeuvnJwvHyF0zb7OGjylaWjxqlXZSJZNa11FcUZCo0pYgy1aDgyiLj4O8r1TuUvlclSV8jvtt3HzYgEj7uXggqdFe3cHIA/s320/download%20(4).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">MONITOR GAMER AOC HERO 23.8 FULL HD 144HZ</h2>
+                 <span class="price">R$1000,00</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 13 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKItf8oRrQ-D1crHSlPX4Dl51YQj6KApm1uD3s1OyVS0b7RUYkR-dRVMT65iDWFzL84RwP-n_fZaorMdAmK25AqCU-6nof5ms92fHqiX6uW-pP39YPV5cThzUh2UEK100r1yL0uLEgKi_tmpd6bID-SRUtRsZ3KWH2XxeScGAhR-nNN-pJ7BaqOtJypJk/s320/download%20(5).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">MEMÓRIA RAM ASGARD LOKI 16GB 3200MHZ</h2>
+                 <span class="price">R$359,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 14 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwjcdNLaS4tZIEs6RKb8_6dPtcRExXI-eMq0LlX21T4bpW8TDjkmR9nxaQsUaUQbiN8b97nfmatGTiAGF06mDMcLPRNSo6iAQ8cCjd92LDkkaASZoUKoTf5xRAUw7xdQV7t7d4w3oEHWm6lcqwWJQ60dLiE0QuleEm7GQG8oMcSOVTJ-Snqbts2-AL2fo/s320/download%20(6).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">GABINETE GAMER RISE MODE GLASS 06X</h2>
+                 <span class="price">R$169,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 15 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf-Ul0MyvfEyCSOQrRsUr6VeDe2Mlqs4Kdx5EEJQlYHMTYz39JoB4OOJCDlMKbKd3pdCLzFwccL3_WbNtA6rg1spLDLFn7lTl-sRxi3Ok3QcEf0jJJfqf1fMOtsfhHxrWC5Pi3ONuJ0Zl14NOxPP4h28DMjlkLsv4mI8g5rKUQINkym9TASqzUGlMyxVM/s320/download%20(7).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">HEADSET GAMER HAVIT</h2>
+                 <span class="price">R$165,98</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 16 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9rbQZ15geNuKqgQAXH6VIe4kWI37uuNY72SWHDoFD3eE7LNKKaHKcb45n1O4fOyFPzyqzIpLI9iZEdhvwHMw5d74BxY0A2_8UhkqN3n_nBz4By7qJU4jBGwDsLFVO2KdAqr6bt5xPhWY4_kedRlLnian5ywq9lDWzIzQhDK2jeGkUHUqNZm_o854gm0k/s320/download%20(10).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">DELUX M800PRO</h2>
+                 <span class="price">R$390,00</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 17 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz_jwpiRBNGegQmxbEDtySbaGEcI68niAvCp4FSAjlmGj5piOF0rKAiGFpkcYgp19l-OWfeEDEyWQiYh69YI1_h9GqGSGFeh8t7WynuyXourNOzt2NWMo3lU5Yv5GvdaU14CUm7M2G2gnUEH6mlnvMO17xMkDvcv7feiKy-ULf-hQJ7FDfZrvtipJzjEI/s320/download%20(1).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">MICROFONE GAMER HYPERX QUADCAST S</h2>
+                 <span class="price">R$799,99 </span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 18 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFaaY81Nos3U0xogVQ8pz6OABkNFg01mQo7_ozoV_iFuNUl131zuSpYcNE-_SccoxXaVijBMHNYF2u8nnZHsdE-ovJOcguhVh1QtXINFAGYZ56AuC1LqLK0w4LamACGlUejFG9ClUOPuChrsgNqEDySsKy5o4wpG8Su4A1liHG5k5n5YqEcPORAHEm9Q0/s320/20220609051051.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">PLACA MÃE ASUS TUF GAMING X670EPLUS</h2>
+                 <span class="price">R$2923,20</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 19 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFijbk4Abk7SvsyLEuLDo-v0oXGVno53HVpxqMvCylLJ7zDPI-i-B_ajns3jxKzxRssRggBakhdHhkVvkcAohSVQVALzNze2ktolh5Xwc3xkT40f9PGhWOgJ2RTcb2rJwZoM3TTmVeTPi0KJARfNJ3jxT2VnCYJD0Lm8XSXSYgLIlbZcBJ2SMXpyJg1ag/s320/download%20(6).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">CADEIRA GAMER MYMAX</h2>
+                 <span class="price">R$594,15</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 20 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCm0QP0w7wIC5OiPs4q9Fl0drJI6PZ1QfWNDmeZgfCELc5Ctcahmu2nLeMe6I6y1pRPWBSGbfPpbbZ3kx87ADWESBcG6LK6jId93w39PNZJ5aQ7dVe0ImwIWaXYYb0Ea_US2_PNV2baZy1SRYqKtNx1rV8DOwNtDskFJVZulhPYfkDqwqBNbjPfcBywco/s320/download%20(7).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">HEADSET GAMER SEM FIO ASTRO A50</h2>
+                 <span class="price">R$1749,99 </span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 21 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPA2HFq2OHKuhFy_JGzPxb870_KGRT44WgYwzgYWDqQG0s5ShZp7qf4lKZKQxqBdRqbR3-Vo5zmmLEDiOB871tdIT1Mf9zN55F6Y8hvTZ7NWknXoPysdix3q_JF0uPaYhJlKCBQ1who8ehF1heg7Klf2bkt1AGf4CQwTr4NwBajC4Cj3RLVBFlgbulCak/s320/download%20(2).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">COOLER FAN CORSAIR</h2>
+                 <span class="price">R$279,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 22 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5VNFmiq4F5AKsm-wFHapE0um40pDVjWwsTe5v0ScU4AfWaK-hALSwLbCRLImbRiCfLotJ4SNlQGCc-Zc7sgi6zDmEDPYBFb8r5i0AKUBNb8_c4L5lMLKtPPv5Hiv-dG1jxqV1-Hg774R1bHkm4iRZ2j2E7hEwMpa8Dobz5R0phC8I0oFCt8b0BCcFuVE/s320/download%20(3).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">MONITOR GAMER ASUS 165HZ</h2>
+                 <span class="price">R$1699,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- Box 23 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl4uTP9AiD0AGo3Rh2DexbGqgonoouxD9oCa0yB_nxKojal0qQK2eYJQViwWYpAyrurZHzDyIVEdliX9tu5X49162Jg8zjsZCrixIYL2uuVn8wNg65eDhE0QvwDDMexllzLd05FIpx_eKkgNDaMsKnSvvZZQbQyL7ZKMsA-UG2i1bmnpnxNHvZSuCXOXs/s320/download.png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">HD SEAGATE SATA 3,5 BARRACUDA 3TB </h2>
+                 <span class="price">R$449,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+            <!-- Box 24 -->
+            <div class="product-box">
+                <!-- Strype precisa de imagens que estão online no servidor local, ele não será exibido na página de checkout de stripe, temos que fazer upload online -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjlIMl573F67wGKQqITty5PFIeqht3FPT51jtVHhdZtUFsqlyA0Hf67HaMk3Y7B_Ocjb4kQirmfIHc0kOYF5UEzoCsp7GnUyX6apcGpLenrIcB8AxZpOOgKBCqKFPgXH1RX-U7rRaGY2cprAJQzGcdy5asuM2TwUKCd0SPP5JYMTbEtpuWxKOoRnmww8Q/s320/download%20(4).png"
+                 alt="" 
+                 class="product-img">
+                 <h2 class="product-title">SUPORTE PARA MONITOR HUSKY</h2>
+                 <span class="price">89,99</span>
+                 <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="/js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
